@@ -1,0 +1,6 @@
+<ul>
+	<p>menu works!</p>
+  <li> <a href routerLink="">Accueil</a> </li>
+  <li> <a href routerLink="etudiants">Étudiants</a> </li>
+  <li *ngIf="!auth.authentifie"> <a href routerLink="connexion">Connexion</a> </li>
+</ul>

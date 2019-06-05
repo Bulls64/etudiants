@@ -1,0 +1,16 @@
+<p>edition works!</p>
+<section>
+  <form #form="ngForm" (submit)="submitChange(form)" >   <!--  ou (click)="submitAuth()" dans boutton se connecter -->
+    <label>Nom<input type="text" name="nom" [(ngModel)]="etudiant.nom" placeholder="Votre nom" />
+    </label>
+    <label>Prénom<input type="text" name="prenom" [(ngModel)]="etudiant.prenom" placeholder="Votre prénom" />
+    </label><br/>
+    <label>Sexe<input type="text" name="sexe" [(ngModel)]="etudiant.sexe" placeholder="Sexe" />
+    </label>
+    <label>Age<input type="number" name="age" [(ngModel)]="etudiant.age" placeholder="Age" />
+    </label><br/>
+    <label>Qualité(s)<input type="text" id='qualite' name="qualite" [(ngModel)]="qualite" placeholder="Qualité(s)" />
+    </label><br/>
+    <input type="submit" value="Valider" />
+  </form>
+</section>

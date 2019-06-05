@@ -1,0 +1,10 @@
+<h1>Voici la liste des étudiants</h1>
+
+<article *ngFor="let etu of etuService.listeEtudiants ; let i = index">
+  <h3>{{etu.nom + ' ' + etu.prenom}}</h3>
+  <img [src]="etu.image" />
+  <p><a href [routerLink]="['/etudiants/edition', i]">Edit</a></p>
+  <p>Age : {{etu.age}}</p>
+  <p>Sexe : {{etu.sexe}}</p>
+  <p>Qualité(s) : {{etu.qualite}}</p>
+</article>

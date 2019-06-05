@@ -1,0 +1,14 @@
+<section>
+	<p></p>
+  <form (submit)="submitAuth()">   <!--  ou (click)="submitAuth()" dans boutton se connecter -->
+    <label>Votre identifiant<input type="text" name="id" [(ngModel)]="login.user"  required placeholder="Votre identifiant" />
+    </label>
+    <br />
+    <label>Votre mot de passe
+      <input type="password" name="mdp" [(ngModel)]="login.password" required placeholder="Votre mot de passe" />
+    </label>
+    <br />
+    <input type="submit" value="Se connecter" />
+    <input type="reset" value="Annuler" />
+  </form>
+</section>
